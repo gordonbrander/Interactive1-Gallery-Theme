@@ -10,7 +10,7 @@
 
 <div id="content">
 
-<?php pk_the_loop('content/page.php'); ?>
+<?php gbl_the_loop('content/page.php'); ?>
 
 </div>
 

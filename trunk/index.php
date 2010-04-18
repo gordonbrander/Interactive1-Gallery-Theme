@@ -11,7 +11,7 @@
 
 <div id="content">
 
-<?php pk_the_loop('content/post-list.php'); ?>
+<?php gbl_the_loop('content/post-list.php'); ?>
 
 </div>
 

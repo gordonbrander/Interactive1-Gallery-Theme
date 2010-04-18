@@ -10,7 +10,10 @@
 
 <div id="content">
 
-	<?php pk_the_loop('content/post-single.php'); ?>
+	<?php
+	gbl_the_loop('content/post-single.php');
+	comments_template();
+	?>
 
 </div>
 

@@ -1,19 +1,11 @@
 <?php
-/*
-Plugin Name: Pocketknife
-Description: Handy little WordPress theme utilites to keep in your back pocket.
-Version: 1.0
-Author: Gordon Brander
-Author URI: http://gordonbrander.com
-*/
-
 /**
- * Get files from your theme and pass in local varables.
+ * Get files from your theme and pass in local variables.
  *
  * @param $file string - path to your theme file, not including TEMPLATEPATH.
  * @param $data string | array - optional. Additional data to pass to file.
  */
-function pk_template_file($file, $data = '') {
+function gbl_template_file($file, $data = '') {
 	$data = wp_parse_args($data);
 	extract($data);
 	
@@ -32,7 +24,7 @@ function pk_template_file($file, $data = '') {
  * no_results: string - customize the no-results response
  * data: string | array - pass in data to the theme file
  */
-function pk_the_loop($file, $args = '') {
+function gbl_the_loop($file, $args = '') {
 
 	$default_args = array(
 		'query' => '',
@@ -44,9 +36,9 @@ function pk_the_loop($file, $args = '') {
 	
 	extract($args);
 	
-	// if (!empty($query)) {
-	//	query_posts($query);
-	// }
+	if (!empty($query)) {
+		query_posts($query);
+	}
 	
 	/*
 	 * This is The Loop.
@@ -59,9 +51,9 @@ function pk_the_loop($file, $args = '') {
 			the_post();
 			
 			/* Pull in template file */
-			pk_template_file($file, $data);
+			gbl_template_file($file, $data);
 		}
-		// wp_reset_query();  // Restore global post data stomped by the_post().
+		wp_reset_query();  // Restore global post data stomped by the_post().
 	} else {
 		echo $no_results;
 	}

@@ -8,7 +8,7 @@
 
 /* Include helpful function collections */
 include_once(trailingslashit(TEMPLATEPATH) . 'functions/wp_head.php');
-include_once(trailingslashit(TEMPLATEPATH) . 'functions/pocketknife.php');
+include_once(trailingslashit(TEMPLATEPATH) . 'functions/template.php');
 
 
 /* Enable post thumbnail theme support */

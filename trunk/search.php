@@ -13,7 +13,7 @@
 	<h2>Search Results</h2>
 	
 	<?php get_search_form(); ?>
-	<?php pk_the_loop('content/post-list.php'); ?>
+	<?php gbl_the_loop('content/post-list.php'); ?>
 	
 </div>
 

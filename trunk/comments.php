@@ -6,9 +6,9 @@
  */
 
 // Do not delete these lines. They are here for security reasons.
-if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
+if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])) {
 	die ('Please do not load this page directly. Thanks!');
-
+}
 // Check if the post is password-protected. If it is, show a prompt instead of the comments.
 if ( post_password_required() ) : ?>
 	<p>This post is password protected. Enter the password to view comments.</p>
