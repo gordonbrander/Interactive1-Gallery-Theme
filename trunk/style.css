@@ -1,0 +1,79 @@
+/*
+ * Theme Name: Interactive 1 Gallery
+ * Description: A simple theme for learning about WordPress theme development. It has lots of comments to help you along.
+ * Version: 1.0
+ * Author: Gordon Brander
+ * Author URI: http://gordonbrander.com
+ *
+ *
+ * The comments above tell WordPress about your theme.
+ * WP uses this information in the admin on the Themes page.
+ * You can change the information above to customize the theme with your own name and info.
+ * Make sure you don't delete them though: WordPress needs them for the theme to work!
+ * More info: <http://codex.wordpress.org/Theme_Development#Theme_Style_Sheet>
+ */
+
+body {
+	color:#333;
+	font:14px/1.4 "Lucida Grande", Calibri, Verdana, Arial, sans-serif;
+	
+	margin:40px auto;
+	width:44em;
+}
+
+/* Comments */
+ol.commentlist {
+	list-style:none;
+	margin-left:0;
+	padding-left:0;
+}
+ol.commentlist .comment-body {
+	margin:1em 0;
+}
+ol.commentlist .avatar  {
+	float:right;
+	margin:0 0 1em 1em;
+}
+
+/*
+ * These are some default styles that WordPress core hooks into.
+ * You can safely remove them, but WordPress.org reccomends that all themes have them.
+ */
+.alignleft {
+	float:left;
+	margin-right:1em;
+	margin-bottom:1em;
+}
+.alignright {
+	float:right;
+	margin-left:1em;
+	margin-bottom:1em;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	/* optional rounded corners for browsers that support it */
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
