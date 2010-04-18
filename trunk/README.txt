@@ -30,15 +30,15 @@ Learn was originally developed to teach WordPress theming to a college-level cla
 
 == Frequently Asked Questions ==
 
-= What are those &lt;?php ?&gt; things? =
+= What are those `<?php ?>` things? =
 
 WordPress is software written in a language called PHP. Basically, wherever you see those tags, WordPress is doing its magic. An intro to PHP would take more time than we have here, but the good news is you don't have to be rocket scientist to customize WordPress themes. Try tinkering and see how far that gets you. If you want to learn more, try getting an *intro to programming* book, or dig around here <http://www.php.net/tut.php>.
 
-= Where learn more about WordPress themes? =
+= Where can I learn more about WordPress themes? =
 
 <http://codex.wordpress.org/>.
 
-= Where can I see a list of all the &lt;?php ?&gt; template tags I can use? =
+= Where can I see a list of all the `<?php ?>` template tags I can use? =
 
 <http://codex.wordpress.org/Template_Tags>
 
